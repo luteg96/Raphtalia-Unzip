@@ -6,4 +6,10 @@ services:
     command: bash start.sh
     restart: on-failure
     environment:
-      - CONFIG_FILE_URL=
+      - BOT_OWNER=
+      - LOGS_CHANNEL=
+      - BOT_TOKEN=
+      - API_HASH=
+      - APP_ID=
+      - GOFILE_TOKEN=
+      - MONGODB_URL=
