@@ -1,0 +1,13 @@
+pyrogram
+TgCrypto
+pyromod
+motor
+dnspython
+psutil
+pykeyboard
+aiohttp
+aiofiles
+Pillow
+gofile2
+python-dotenv
+requests

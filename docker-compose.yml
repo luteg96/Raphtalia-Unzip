@@ -1,0 +1,9 @@
+version: "96.436"
+
+services:
+  raphtalia:
+    build: .
+    command: bash start.sh
+    restart: on-failure
+    environment:
+      - CONFIG_FILE_URL=
