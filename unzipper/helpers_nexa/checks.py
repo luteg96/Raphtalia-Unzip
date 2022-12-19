@@ -1,16 +1,3 @@
-# ===================================================================== #
-#                      Copyright (c) 2022 Itz-fork                      #
-#                                                                       #
-# This program is distributed in the hope that it will be useful,       #
-# but WITHOUT ANY WARRANTY; without even the implied warranty of        #
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                  #
-# See the GNU General Public License for more details.                  #
-#                                                                       #
-# You should have received a copy of the GNU General Public License     #
-# along with this program. If not, see <http://www.gnu.org/licenses/>   #
-# ===================================================================== #
-
-
 import logging
 from pyrogram import enums
 from unzipper import unzip_client
@@ -29,7 +16,7 @@ def check_log_channel():
                 exit()
             else:
                 unzip_client.send_message(
-                    chat_id=Config.LOGS_CHANNEL, text="`Unzipper-Bot has Successfully Started!` \n\n**Powered by @NexaBotsUpdates**")
+                    chat_id=Config.LOGS_CHANNEL, text="`Raphtalia-Unzip-Bot has Successfully Started!` \n\n**Owner @luteg_glh**")
         else:
             logging.warn("No Log Channel ID is Given! Imma leaving Now!")
             exit()

@@ -1,17 +1,3 @@
-# ===================================================================== #
-#                      Copyright (c) 2022 Itz-fork                      #
-#                                                                       #
-# This program is distributed in the hope that it will be useful,       #
-# but WITHOUT ANY WARRANTY; without even the implied warranty of        #
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                  #
-# See the GNU General Public License for more details.                  #
-#                                                                       #
-# You should have received a copy of the GNU General Public License     #
-# along with this program. If not, see <http://www.gnu.org/licenses/>   #
-# ===================================================================== #
-
-# Credits: SpEcHiDe's AnyDL-Bot for progress_for_pyrogram, humanbytes and TimeFormatter
-
 from re import sub
 from time import time
 from math import floor
@@ -43,14 +29,14 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
                 ''.join(["◎" for i in range(20 - floor(percentage / 5))]),
                 round(percentage, 2))
 
-            tmp = progress + "{0} of {1}\n**🏃 Speed:** {2}/s\n**⏰ ETA:** {3}\n".format(
+            tmp = progress + "{0} of {1}\n**🚀 Speed:** {2}/s\n**⏰ ETA:** {3}\n".format(
                 humanbytes(current),
                 humanbytes(total),
                 humanbytes(speed),
                 estimated_total_time if estimated_total_time != '' else "0 s"
             )
             try:
-                await message.edit("{}\n {} \n\n**Powered by @NexaBotsUpdates**".format(ud_type, tmp))
+                await message.edit("{}\n {} \n\n**@ltg_Raphtalia_bot**".format(ud_type, tmp))
             except:
                 pass
     else:
@@ -61,7 +47,7 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
             "unknown"
         )
         try:
-            await message.edit("{}\n {} \n\n**Powered by @NexaBotsUpdates**".format(ud_type, tmp))
+            await message.edit("{}\n {} \n\n**@ltg_Raphtalia_bot**".format(ud_type, tmp))
         except:
             pass
 
