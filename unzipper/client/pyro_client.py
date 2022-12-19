@@ -32,7 +32,7 @@ class UnzipperBot(Client):
     """
     Unzipper bot client
     """
-    version = "v1.0.2"
+    version = "v96.859"
 
     def __init__(self):
         super().__init__("UnzipperBot",
@@ -115,7 +115,7 @@ class UnzipperBot(Client):
                 await self.send_video(
                     chat_id=c_id,
                     video=doc_f,
-                    caption="**Extracted by @NexaUnzipper_Bot**",
+                    caption="**Extracted by @ltg_Raphatlia_bot**",
                     duration=int(
                         vid_duration) if vid_duration.isnumeric() else 0,
                     thumb=sthumb,
@@ -127,7 +127,7 @@ class UnzipperBot(Client):
                 await self.send_document(
                     chat_id=c_id,
                     document=doc_f,
-                    caption="**Extracted by @NexaUnzipper_Bot**",
+                    caption="**Extracted by @ltg_Raphatlia_bot**",
                     thumb=sthumb,
                     progress=progress_for_pyrogram,
                     progress_args=("**Trying to upload 😇** \n", tgupmsg, stm))
